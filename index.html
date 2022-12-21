@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background: url("https://bilderupload.org/image/b15403931-4k-hd-wallpaper-free-down.jpg");
+    }
+  </style>
+  <title>❤️Zeit seit dem 11.11.2021❤️</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: rgb(255, 0, 0);
+    }
+    body {
+      font-family: "Times New Roman", serif;
+    }
+    .bold {
+      font-weight: bold;
+      color: rgb(255, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>❤️Zeit seit dem 11.11.2021❤️</h1>
+      <p>Jahre: <span id="years" class="bold">0</span></p>
+      <p>Tage: <span id="days" class="bold">0</span></p>
+      <p>Stunden: <span id="hours" class="bold">0</span></p>
+      <p>Sekunden: <span id="seconds" class="bold">0</span></p>
+    </div>
+  </div>
+
+  <script>
+    // Setzen Sie das Ziel-Datum auf den 11.11.2021
+    var targetDate = new Date("11. Nov 2021");
+
+    // Aktualisieren Sie den Countdown alle 1 Sekunde
+    setInterval(function() {
+      // Holen Sie sich das aktuelle Datum
+      var currentDate = new Date();
+
+      // Berechnen Sie den Unterschied in Millisekunden zwischen dem aktuellen Datum und dem Ziel-Datum
+      var diff = currentDate - targetDate;
+
+      // Berechnen Sie die Anzahl der Jahre, Tage, Stunden und Sekunden
+      var years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+      var days = Math.floor(diff / (1000 * 60 * 60 * 24) % 365);
+      var hours = Math.floor(diff / (1000 * 60 * 60) % 24);
+      var seconds = Math.floor(diff / 1000 % 60);
+
+      // Aktualisieren Sie die HTML-Elemente mit den berechneten Werten
+      document.getElementById("years").innerHTML = years;
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("seconds").innerHTML = seconds;
+    }, 1000);
+  </script>
+</body>
+</html>
+
+
+<div style="position:absolute; top:600px; left:700px;">
+  [<iframe width="560" height="315" src="https://www.youtube.com/embed/zCH9azs1uRA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]
+</div>
+
+<button id="volume-button">Lautstärke</button>
+
+
+<script>
+  // Der Einbettungscode von YouTube hier einfügen
+
+  // Den Knopf abfangen und die Lautstärke ändern
+  document.getElementById('volume-button').addEventListener('click', function() {
+    player.setVolume(50); // Die Lautstärke auf 50% setzen
+  });
+</script>
+
+
+
+
